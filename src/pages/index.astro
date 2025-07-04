@@ -1,0 +1,23 @@
+---
+import { Footer } from "../components/Footer/Footer.tsx";
+import { Header } from "../components/Header/Header.tsx";
+import { HowWeDo } from "../components/HowWeDo/HowWeDo.tsx";
+import { MakeAProduct } from "../components/MakeAProduct/MakeAProduct.tsx";
+import { OurDesign } from "../components/OurDesign/OurDesign.tsx";
+import { WeAreSeesaw } from "../components/WeAreSeesaw/WeAreSeesaw.tsx";
+import { WhatWeDo } from "../components/WhatWeDo/WhatWeDo.tsx";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import "../styles/main.scss";
+---
+
+<BaseLayout title="Главная | Seesaw">
+  <Header />
+  <main class="main">
+    <WeAreSeesaw client:load />
+    <MakeAProduct />
+    <WhatWeDo />
+    <OurDesign client:load />
+    <HowWeDo client:load />
+  </main>
+  <Footer />
+</BaseLayout>

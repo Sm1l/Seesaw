@@ -1,0 +1,24 @@
+.project {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px 10px 80px;
+
+  color: var(--clr-black);
+
+  border-bottom-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+
+  background-color: var(--clr-white);
+}
+
+@media (width >= 1024px) {
+  .project {
+    gap: 80px;
+
+    padding: 40px 80px 120px;
+  }
+}

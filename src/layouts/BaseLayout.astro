@@ -1,0 +1,51 @@
+---
+import { Wrapper } from "../components/Wrapper/Wrapper";
+
+const { title = "Seesaw", description = "Seesaw. We will make a product from your idea!" } = Astro.props;
+const imageUrl = "https://sm1l.github.io/Touch/img/seesaw_min.png";
+---
+
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Seesaw" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta
+      name="keywords"
+      content="Seesaw, design, websites, branding, merch, brand guidelines, smm, ux researches, performance creatives, banners, print production."
+    />
+    <meta name="author" content="Sm1le" />
+    <meta name="robots" content="index, follow" />
+
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={imageUrl} />
+    <!--! в проде полный url -->
+    <!-- <meta property="og:url" content="https://example.com/"> -->
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Cards -->
+    <!-- <meta name="twitter:card" content="summary_large_image"> -->
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={imageUrl} />
+    <!-- <meta name="twitter:site" content="@ВашТвиттер"> -->
+
+    <meta name="msapplication-TileColor" content="#041c6d" />
+    <meta name="theme-color" content="#041c6d" />
+
+    <title>{title}</title>
+  </head>
+  <body>
+    <Wrapper client:load>
+      <slot />
+    </Wrapper>
+  </body>
+</html>

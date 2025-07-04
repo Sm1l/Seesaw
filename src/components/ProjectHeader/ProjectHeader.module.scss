@@ -1,0 +1,29 @@
+.projectHeader {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  max-width: var(--medium-width);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoImg {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+  max-width: 180px;
+}
+
+@media (width >= 768px) {
+  .logoImg {
+    max-width: 300px;
+  }
+}

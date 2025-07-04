@@ -1,0 +1,15 @@
+---
+import { Footer } from "../components/Footer/Footer.tsx";
+import { Project } from "../components/Project/Project.tsx";
+import { ProjectPicture } from "../components/ProjectPicture/ProjectPicture";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import "../styles/main.scss";
+---
+
+<BaseLayout title="Avacha | Seesaw">
+  <Project client:load />
+  <main class="main">
+    <ProjectPicture alt="Avacha" src="/src/assets/img/avacha_site.jpg" />
+  </main>
+  <Footer />
+</BaseLayout>
