@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 
+import seeUrl from "../../assets/img/see.svg?url";
+import sawUrl from "../../assets/img/saw.svg?url";
 import { aurora } from "../../scripts/animations/aurora";
 import { auroraCenter } from "../../scripts/animations/auroraCenter";
 import { letterFade } from "../../scripts/animations/letterFade";
@@ -21,10 +23,10 @@ const WeAreSeesaw: React.FC<WeAreSeesawProps> = () => {
           <p className={styles.weAreSeesaw_title}>we are</p>
           <div className={styles.weAreSeesaw_logoContainer}>
             <div className={`${styles.weAreSeesaw_imgContainer} ${styles.weAreSeesaw_imgContainer_see} ibg`}>
-              <img className={styles.weAreSeesaw_img} src="./src/assets/img/see.svg" alt="see logo" />
+              <img className={styles.weAreSeesaw_img} src={seeUrl} alt="see logo" />
             </div>
             <div className={`${styles.weAreSeesaw_imgContainer} ${styles.weAreSeesaw_imgContainer_saw} ibg`}>
-              <img className={styles.weAreSeesaw_img} src="./src/assets/img/saw.svg" alt="saw logo" />
+              <img className={styles.weAreSeesaw_img} src={sawUrl} alt="saw logo" />
             </div>
             {/* <!-- <picture>
                 <source srcset="./src/assets/img/seesaw.avif" type="image/avif" />

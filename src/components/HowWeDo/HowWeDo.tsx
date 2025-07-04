@@ -4,6 +4,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
 
+import logoUrl from "../../assets/img/avachaLogo.svg?url";
+import imgUrl from "../../assets/img/avachaPic.jpg?url";
 import styles from "./HowWeDo.module.scss";
 import styles2 from "./HowWeDoSwiper.module.scss";
 
@@ -36,8 +38,8 @@ const HowWeDo: React.FC<HowWeDoProps> = () => {
       >
         <SwiperSlide className={styles2.howWeDoSwiperSlide}>
           <a className={styles2.howWeDoSwiper_link} href="./avacha.html">
-            <img className={styles2.howWeDoSwiper_img} src="/src/assets/img/avachaPic.jpg" alt="avacha" />
-            <img className={styles2.howWeDoSwiper_imgLogo} src="/src/assets/img/avachaLogo.svg" alt="logo" />
+            <img className={styles2.howWeDoSwiper_img} src={imgUrl} alt="avacha" />
+            <img className={styles2.howWeDoSwiper_imgLogo} src={logoUrl} alt="logo" />
           </a>
           <div className={styles2.howWeDoSwiper_textContainer}>
             <p className={styles2.howWeDoSwiper_brand}>Avacha</p>
@@ -46,8 +48,8 @@ const HowWeDo: React.FC<HowWeDoProps> = () => {
         </SwiperSlide>
         <SwiperSlide className={styles2.howWeDoSwiperSlide}>
           <a className={styles2.howWeDoSwiper_link} href="">
-            <img className={styles2.howWeDoSwiper_img} src="/src/assets/img/avachaPic.jpg" alt="avacha" />
-            <img className={styles2.howWeDoSwiper_imgLogo} src="/src/assets/img/avachaLogo.svg" alt="logo" />
+            <img className={styles2.howWeDoSwiper_img} src={imgUrl} alt="avacha" />
+            <img className={styles2.howWeDoSwiper_imgLogo} src={logoUrl} alt="logo" />
           </a>
           <div className={styles2.howWeDoSwiper_textContainer}>
             <p className={styles2.howWeDoSwiper_brand}>Sultagro</p>
@@ -56,8 +58,8 @@ const HowWeDo: React.FC<HowWeDoProps> = () => {
         </SwiperSlide>
         <SwiperSlide className={styles2.howWeDoSwiperSlide}>
           <a className={styles2.howWeDoSwiper_link} href="">
-            <img className={styles2.howWeDoSwiper_img} src="/src/assets/img/avachaPic.jpg" alt="avacha" />
-            <img className={styles2.howWeDoSwiper_imgLogo} src="/src/assets/img/avachaLogo.svg" alt="logo" />
+            <img className={styles2.howWeDoSwiper_img} src={imgUrl} alt="avacha" />
+            <img className={styles2.howWeDoSwiper_imgLogo} src={logoUrl} alt="logo" />
           </a>
           <div className={styles2.howWeDoSwiper_textContainer}>
             <p className={styles2.howWeDoSwiper_brand}>Something</p>

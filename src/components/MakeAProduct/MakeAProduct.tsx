@@ -1,6 +1,7 @@
 import React from "react";
 
 import styles from "./MakeAProduct.module.scss";
+import outlineUrl from "../../assets/img/outline.svg?url";
 
 interface MakeAProductProps {}
 
@@ -12,7 +13,7 @@ const MakeAProduct: React.FC<MakeAProductProps> = () => {
           <span className={styles.makeAProduct_text}>& we will make a</span>
           <span className={styles.makeAProduct_span}>
             product
-            <img className={styles.makeAProduct_img} src="img/outline.svg" alt="outline" />
+            <img className={styles.makeAProduct_img} src={outlineUrl} alt="outline" />
           </span>
           <span className={styles.makeAProduct_text}>from your idea</span>
         </h2>

@@ -10,7 +10,6 @@ interface ProjectPictureProps {
 const ProjectPicture: React.FC<ProjectPictureProps> = ({ src, alt }) => {
   return (
     <section className={styles.projectPicture}>
-      {/* <img className={styles.img} src="/src/assets/img/avacha_site.jpg" alt="avacha site" /> */}
       <img className={styles.img} src={src} alt={alt} />
     </section>
   );
