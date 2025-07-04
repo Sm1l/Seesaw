@@ -37,7 +37,7 @@ const HowWeDo: React.FC<HowWeDoProps> = () => {
         }}
       >
         <SwiperSlide className={styles2.howWeDoSwiperSlide}>
-          <a className={styles2.howWeDoSwiper_link} href="./avacha.html">
+          <a className={styles2.howWeDoSwiper_link} href={`${import.meta.env.BASE_URL}avacha`}>
             <img className={styles2.howWeDoSwiper_img} src={imgUrl} alt="avacha" />
             <img className={styles2.howWeDoSwiper_imgLogo} src={logoUrl} alt="logo" />
           </a>
